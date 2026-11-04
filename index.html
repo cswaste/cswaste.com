@@ -1,382 +1,502 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta property="og:title" content="C&S Waste | Dump Trailer Services">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#142b48">
 
-<meta property="og:description" content="Reliable waste removal and dump trailer services. Call C&S Waste at 740-500-7367.">
+<title>C&S Waste | Dumpster Rental & Junk Removal Ohio</title>
 
-<meta property="og:image" content="https://cswasteohio.com/download.png">
+<meta name="description" content="C&S Waste provides dumpster rentals, junk removal, and full-service loading and hauling in Fairfield County, Ohio. Call for a free quote!">
 
-<meta property="og:image:width" content="1200">
+<style>
+:root {
+ --navy: #142b48;
+ --blue: #203e62;
+ --red: #c62832;
+ --white: #ffffff;
+ --light: #f3f5f8;
+ --dark: #172333;
+ --gray: #536174;
+}
 
-<meta property="og:image:height" content="630">
+* {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
 
-<meta property="og:image:alt" content="C&S Waste logo">
+html { scroll-behavior: smooth; }
 
-<meta property="og:type" content="website">
+body {
+ font-family: Arial, Helvetica, sans-serif;
+ color: var(--dark);
+ line-height: 1.65;
+ background: white;
+}
 
-<meta name="twitter:card" content="summary_large_image">
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>C&S Waste — Dump Trailer Rentals</title>
-  <meta name="description" content="Dump trailer rentals — you fill it, we pick it up. Serving Fairfield County, Ohio. Book online or call 740-500-7367." />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <!-- LocalBusiness structured data (adjust fields as needed) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "C&S Waste",
-    "image": "https://your-site.example/assets/logo-placeholder.png",
-    "@id": "https://cswaste.com",
-    "url": "https://cswaste.com",
-    "telephone": "740-500-7367",
-    "priceRange": "$$",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Fairfield County",
-      "addressRegion": "OH",
-      "addressCountry": "US"
-    },
-    "sameAs": [
-      "https://facebook.com/yourpage",
-      "https://instagram.com/yourpage"
-    ]
-  }
-  </script>
+a { text-decoration: none; }
+
+.container {
+ width: min(1120px, 90%);
+ margin: auto;
+}
+
+header {
+ background: var(--navy);
+ color: white;
+ padding: 18px 0;
+}
+
+.nav {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ gap: 20px;
+ flex-wrap: wrap;
+}
+
+.brand {
+ color: white;
+ font-size: 29px;
+ font-weight: 900;
+ letter-spacing: -1px;
+}
+
+.brand span { color: #f04a50; }
+
+.nav-links {
+ display: flex;
+ gap: 24px;
+ align-items: center;
+}
+
+.nav-links a {
+ color: white;
+ font-weight: 700;
+ font-size: 15px;
+}
+
+.button {
+ display: inline-block;
+ background: var(--red);
+ color: white;
+ padding: 14px 24px;
+ border-radius: 6px;
+ font-weight: 800;
+ text-align: center;
+ transition: .2s;
+}
+
+.button:hover {
+ background: #a91e28;
+ transform: translateY(-2px);
+}
+
+.button.outline {
+ background: transparent;
+ border: 2px solid white;
+}
+
+.hero {
+ background: linear-gradient(120deg, #142b48, #294b70);
+ color: white;
+ padding: 100px 0;
+ text-align: center;
+}
+
+.hero h1 {
+ font-size: clamp(36px, 6vw, 58px);
+ line-height: 1.12;
+ font-weight: 900;
+ margin-bottom: 22px;
+}
+
+.hero p {
+ max-width: 720px;
+ margin: 0 auto 30px;
+ font-size: 20px;
+ color: #ffffff;
+ font-weight: 500;
+}
+
+.hero-buttons {
+ display: flex;
+ justify-content: center;
+ gap: 14px;
+ flex-wrap: wrap;
+}
+
+.section {
+ padding: 75px 0;
+}
+
+.section-light { background: var(--light); }
+
+.section-heading {
+ text-align: center;
+ margin-bottom: 40px;
+}
+
+.section-heading h2 {
+ color: var(--navy);
+ font-size: clamp(29px, 4vw, 40px);
+ font-weight: 900;
+ line-height: 1.2;
+ margin-bottom: 12px;
+}
+
+.section-heading p {
+ color: var(--gray);
+ font-size: 17px;
+ font-weight: 500;
+}
+
+.cards {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 24px;
+}
+
+.card {
+ background: white;
+ padding: 30px;
+ border-radius: 10px;
+ box-shadow: 0 5px 22px rgba(20,43,72,.09);
+ border-top: 5px solid var(--red);
+}
+
+.card h3 {
+ color: var(--navy);
+ font-size: 22px;
+ font-weight: 900;
+ margin-bottom: 12px;
+}
+
+.card p {
+ color: var(--gray);
+ font-weight: 500;
+}
+
+.service-icon {
+ font-size: 34px;
+ margin-bottom: 15px;
+}
+
+.full-service {
+ background: var(--navy);
+ color: white;
+ text-align: center;
+ padding: 75px 20px;
+}
+
+.full-service h2 {
+ font-size: clamp(30px, 5vw, 45px);
+ font-weight: 900;
+ margin-bottom: 15px;
+}
+
+.full-service h3 {
+ color: #ff666b;
+ font-size: clamp(23px, 4vw, 32px);
+ margin-bottom: 18px;
+ font-weight: 900;
+}
+
+.full-service p {
+ max-width: 720px;
+ margin: 0 auto 15px;
+ color: white;
+ font-size: 18px;
+}
+
+.pricing-note {
+ background: white;
+ border-radius: 10px;
+ padding: 35px;
+ text-align: center;
+ max-width: 800px;
+ margin: auto;
+ box-shadow: 0 5px 22px rgba(20,43,72,.08);
+}
+
+.pricing-note h2 {
+ color: var(--navy);
+ font-size: 30px;
+ font-weight: 900;
+ margin-bottom: 12px;
+}
+
+.pricing-note p {
+ color: var(--gray);
+ font-size: 17px;
+ margin-bottom: 20px;
+}
+
+.why {
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ gap: 20px;
+ max-width: 850px;
+ margin: auto;
+}
+
+.why-item {
+ background: white;
+ padding: 22px;
+ border-radius: 8px;
+ font-weight: 800;
+ color: var(--navy);
+ box-shadow: 0 3px 15px rgba(20,43,72,.06);
+}
+
+.why-item span {
+ color: var(--red);
+ margin-right: 10px;
+}
+
+.cta {
+ background: var(--light);
+ text-align: center;
+ padding: 75px 20px;
+}
+
+.cta h2 {
+ color: var(--navy);
+ font-size: 38px;
+ font-weight: 900;
+ margin-bottom: 15px;
+}
+
+.cta p {
+ color: var(--gray);
+ font-size: 18px;
+ margin-bottom: 25px;
+}
+
+footer {
+ background: #101f33;
+ color: white;
+ padding: 40px 0;
+ text-align: center;
+}
+
+footer h2 {
+ font-size: 27px;
+ margin-bottom: 10px;
+}
+
+footer p {
+ color: #e2e8f0;
+ margin: 7px 0;
+}
+
+footer a { color: white; font-weight: 800; }
+
+.footer-bottom {
+ border-top: 1px solid #40516a;
+ margin-top: 25px;
+ padding-top: 20px;
+ font-size: 13px;
+ color: #d5dce6;
+}
+
+@media(max-width: 750px) {
+ .nav {
+   justify-content: center;
+   text-align: center;
+ }
+
+ .nav-links {
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 15px;
+ }
+
+ .cards {
+   grid-template-columns: 1fr;
+ }
+
+ .hero { padding: 75px 0; }
+
+ .hero p { font-size: 18px; }
+
+ .section { padding: 55px 0; }
+
+ .why { grid-template-columns: 1fr; }
+
+ .cta h2 { font-size: 30px; }
+}
+</style>
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="topbar">
-      <div class="container topbar-inner">
-        <div class="location" aria-hidden="false">📍 Serving Fairfield County, Ohio</div>
-        <div class="phone">📞 <a href="tel:740-500-7367">740-500-7367</a></div>
-      </div>
-    </div>
 
-    <div class="container nav-wrap">
-      <a class="logo" href="#" aria-label="C and S Waste home">
-        <img src="assets/logo-placeholder.png" alt="C&S Waste logo" loading="lazy" />
-      </a>
+<header>
+ <div class="container nav">
+   <a class="brand" href="#">C&amp;S <span>WASTE</span></a>
 
-      <nav class="main-nav" id="mainNav" aria-label="Primary">
-        <a href="#" class="active">Home</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#how">How It Works</a>
-        <a href="#services">Services</a>
-        <a href="#area">Service Area</a>
-        <a href="#contact">Contact</a>
-      </nav>
+   <nav class="nav-links">
+     <a href="#services">Services</a>
+     <a href="#full-service">Full Service</a>
+     <a href="#pricing">Pricing</a>
+     <a href="#contact">Contact</a>
+   </nav>
 
-      <div class="header-cta">
-        <button class="btn btn-ghost" id="openQuote" aria-haspopup="dialog">GET A QUOTE</button>
-      </div>
+   <a class="button" href="tel:7405007367">CALL NOW</a>
+ </div>
+</header>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-    </div>
-  </header>
+<main>
 
-  <main>
-    <!-- HERO -->
-    <section class="hero" aria-labelledby="hero-heading">
-      <div class="hero-overlay"></div>
-      <img class="hero-bg" src="assets/hero-placeholder.jpg" alt="Dump trailer on driveway" loading="lazy">
-      <div class="container hero-content">
-        <div class="hero-left">
-          <h1 id="hero-heading"><span class="muted">DUMP TRAILER</span> <span class="accent">RENTALS</span></h1>
-          <p class="tagline">YOU FILL IT. WE PICK IT UP.</p>
+<section class="hero">
+ <div class="container">
+   <h1>Reliable Dumpster Rental &amp; Junk Removal</h1>
 
-          <ul class="features" aria-hidden="false">
-            <li>Convenient Delivery & Pickup</li>
-            <li>Clean & Reliable Equipment</li>
-            <li>Fully Insured & Licensed</li>
-            <li>Serving Fairfield County, Ohio</li>
-          </ul>
-        </div>
+   <p>
+     Need to clear out a property, tackle a project,
+     or get rid of unwanted junk? C&amp;S Waste is here
+     to make cleanup easier.
+   </p>
 
-        <div class="hero-cta">
-          <div class="cta-card" role="region" aria-label="Quick quote">
-            <button class="btn btn-primary" id="openQuoteCTA">GET A QUOTE →</button>
-            <div class="big-phone">📞 <a href="tel:740-500-7367">740-500-7367</a></div>
-          </div>
-        </div>
-      </div>
-    </section>
-<section class="py-16 px-6 text-center bg-gray-100">
-  <div class="max-w-4xl mx-auto">
-    <h2 class="text-3xl md:text-4xl font-bold mb-4">
-      DON'T WANT TO LIFT A FINGER?
-    </h2>
-    <p class="text-xl md:text-2xl font-bold mb-4">
-      You Point. We Load. We Haul It Away!
-    </p>
-    <p class="text-lg">
-      Sit back and relax. We'll do all the heavy lifting,
-      loading, and hauling for you. Pricing varies based on the amount of material, loading requirements, and disposal fees. 
-      Contact us for a free quote! 
-    </p>
-  </div>
+   <div class="hero-buttons">
+     <a class="button" href="tel:7405007367">
+       GET A FREE QUOTE
+     </a>
+     <a class="button outline" href="#services">
+       VIEW OUR SERVICES
+     </a>
+   </div>
+ </div>
 </section>
-    
-    <!-- PRICING -->
-    <section id="pricing" class="section-white">
-      <div class="container">
-        <h2 class="section-title">Our <span class="accent">Rental Options</span></h2>
-        <p class="section-sub">Flexible rental periods to fit your project needs.</p>
 
-        <div class="pricing-grid">
-          <div class="price-card" aria-hidden="false">
-            <div class="plan">2 Day Rental</div>
-            <div class="price">$299</div>
-            <div class="note">(up to 14 days)</div>
-            <button class="btn btn-outline open-quick" data-plan="2 Day Rental">Book 2 Day</button>
-          </div>
+<section class="section section-light" id="services">
+ <div class="container">
+   <div class="section-heading">
+     <h2>How Can We Help?</h2>
+     <p>Practical cleanup solutions for your home or project.</p>
+   </div>
 
-          <div class="price-card">
-            <div class="plan">3 Day Rental</div>
-            <div class="price">$349</div>
-            <div class="note">(up to 14 days)</div>
-            <button class="btn btn-outline open-quick" data-plan="3 Day Rental">Book 3 Day</button>
-          </div>
+   <div class="cards">
 
-          <div class="price-card">
-            <div class="plan">7 Day Rental</div>
-            <div class="price">$449</div>
-            <div class="note">(up to 14 days)</div>
-            <button class="btn btn-outline open-quick" data-plan="7 Day Rental">Book 7 Day</button>
-          </div>
+     <div class="card">
+       <div class="service-icon">🚛</div>
+       <h3>Dumpster Rentals</h3>
+       <p>
+         Convenient dumpster rentals for home cleanouts,
+         renovations, property cleanup, and more.
+       </p>
+     </div>
 
-          <aside class="fees" aria-labelledby="fees-heading">
-            <h3 id="fees-heading">Additional Fees</h3>
-            <ul>
-              <li>Extra Day — $25/day</li>
-              <li>Overweight Load — $75+</li>
-              <li>Prohibited Materials — $100+</li>
-              <li>Tire Damage — $150+</li>
-              <li>Cleaning Fee — $50+</li>
-              <li>After Hours Pickup — $100+</li>
-              <li>Delivery Outside Service Area — $2/mile</li>
-            </ul>
-          </aside>
-        </div>
-      </div>
-    </section>
+     <div class="card">
+       <div class="service-icon">♻️</div>
+       <h3>Junk Removal</h3>
+       <p>
+         Get unwanted items and debris out of your way.
+         Let C&amp;S Waste help with your cleanup.
+       </p>
+     </div>
 
-    <!-- HOW IT WORKS -->
-    <section id="how" class="section-dark how-section">
-      <div class="container">
-        <h2 class="section-title light">How It <span class="accent">Works</span></h2>
-        <p class="section-sub light">It's simple, fast and hassle-free.</p>
+     <div class="card">
+       <div class="service-icon">💪</div>
+       <h3>Loading &amp; Hauling</h3>
+       <p>
+         Don't want to do the heavy lifting?
+         We can load your unwanted items and haul them away.
+       </p>
+     </div>
 
-        <div class="how-grid">
-          <div class="how-step">
-            <div class="step-num">1</div>
-            <h4>Book Online or Call</h4>
-            <p>Choose your rental period, provide details and pay securely.</p>
-          </div>
+   </div>
+ </div>
+</section>
 
-          <div class="how-step">
-            <div class="step-num">2</div>
-            <h4>We Deliver</h4>
-            <p>We'll drop the trailer at your location on the scheduled date.</p>
-          </div>
+<section class="full-service" id="full-service">
+ <div class="container">
+   <h2>DON'T WANT TO LIFT A FINGER?</h2>
 
-          <div class="how-step">
-            <div class="step-num">3</div>
-            <h4>You Fill It</h4>
-            <p>Load it with debris, junk or materials.</p>
-          </div>
+   <h3>You Point. We Load. We Haul It Away!</h3>
 
-          <div class="how-step">
-            <div class="step-num">4</div>
-            <h4>We Pick It Up</h4>
-            <p>When you're done, we'll haul it away and dispose of it.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+   <p>
+     Sit back and relax. We'll handle the heavy lifting,
+     loading, and hauling so you don't have to.
+   </p>
 
-    <!-- SERVICES GRID -->
-    <section id="services" class="section-white">
-      <div class="container">
-        <div class="services-head">
-          <div>
-            <h2 class="section-title">Perfect For</h2>
-            <p class="section-sub">Residential & Commercial Projects</p>
-            <ul class="bullet-list">
-              <li>Home Cleanouts</li>
-              <li>Remodeling & Renovations</li>
-              <li>Roofing Projects</li>
-              <li>Yard Waste & Brush</li>
-              <li>Construction Debris</li>
-            </ul>
-          </div>
+   <p>
+     Pricing varies based on the amount of material,
+     loading requirements, and disposal fees.
+     Contact us for a free estimate.
+   </p>
 
-          <div class="contractor-box">
-            <h3>Contractor Accounts</h3>
-            <p>Special rates and flexible terms for contractors and property managers.</p>
-            <button class="btn btn-outline" id="contractorContact">Learn More →</button>
-          </div>
-        </div>
+   <a class="button" href="tel:7405007367">
+     GET YOUR FREE QUOTE
+   </a>
+ </div>
+</section>
 
-        <div class="services-grid">
-          <div class="service-thumb"><img src="assets/service1.jpg" alt="Home cleanouts" loading="lazy"><span>Home Cleanouts</span></div>
-          <div class="service-thumb"><img src="assets/service2.jpg" alt="Remodeling" loading="lazy"><span>Remodeling</span></div>
-          <div class="service-thumb"><img src="assets/service3.jpg" alt="Roofing" loading="lazy"><span>Roofing</span></div>
-          <div class="service-thumb"><img src="assets/service4.jpg" alt="Landscaping" loading="lazy"><span>Landscaping</span></div>
-          <div class="service-thumb"><img src="assets/service5.jpg" alt="Construction" loading="lazy"><span>Construction</span></div>
-          <div class="service-thumb"><img src="assets/service6.jpg" alt="Yard Waste" loading="lazy"><span>Yard Waste</span></div>
-        </div>
-      </div>
-    </section>
+<section class="section section-light" id="pricing">
+ <div class="container">
+   <div class="pricing-note">
+     <h2>Simple, Upfront Pricing</h2>
+     <p>
+       Every cleanup project is different.
+       Rates vary depending on the dumpster size,
+       amount of material, loading requirements,
+       and disposal costs.
+     </p>
+     <p>
+       Contact us for a personalized quote
+       with no obligation.
+     </p>
+     <a class="button" href="tel:7405007367">
+       ASK ABOUT PRICING
+     </a>
+   </div>
+ </div>
+</section>
 
-    <!-- SERVICE AREA + TESTIMONIALS -->
-    <section id="area" class="section-dark area-section">
-      <div class="container area-grid">
-        <div class="area-map">
-          <h3>Service Area</h3>
-          <p>Proudly serving all of Fairfield County, Ohio and surrounding areas.</p>
-          <ul class="area-list">
-            <li>Lancaster</li>
-            <li>Reemem</li>
-            <li>Amanda</li>
-            <li>Pataskala</li>
-            <li>Lithopolis</li>
-            <li>And More!</li>
-          </ul>
-          <!-- Replace src with your Google Maps embed link or Leaflet map integration -->
-          <div class="map-wrap" aria-hidden="false">
-            <iframe
-              title="Service area map"
-              src="https://www.google.com/maps/embed?pb=!1m18!..." 
-              width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          </div>
-          <a class="btn btn-outline" href="#contact">View Full Service Area</a>
-        </div>
+<section class="section">
+ <div class="container">
+   <div class="section-heading">
+     <h2>Why Choose C&amp;S Waste?</h2>
+     <p>Making your next cleanup project easier.</p>
+   </div>
 
-        <div class="testimonials">
-          <h3>Customer Reviews</h3>
-          <div class="review">
-            <p class="stars" aria-hidden="true">★★★★★</p>
-            <p class="quote">"Great experience! The trailer was clean, on time and made our project so much easier. Highly recommend C&S Waste!"</p>
-            <p class="author">— Jason M.</p>
-          </div>
+   <div class="why">
+     <div class="why-item"><span>✓</span> Convenient Cleanup Solutions</div>
+     <div class="why-item"><span>✓</span> Friendly, Reliable Service</div>
+     <div class="why-item"><span>✓</span> Dumpster Rental Options</div>
+     <div class="why-item"><span>✓</span> Full-Service Loading Available</div>
+   </div>
+ </div>
+</section>
 
-          <div class="cta-panel">
-            <h4>Ready to get started?</h4>
-            <button class="btn btn-primary" id="callUs">Call or text us — 740-500-7367</button>
-            <button class="btn btn-ghost" id="openQuote2">Get A Quote</button>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+<section class="cta">
+ <div class="container">
+   <h2>Ready to Get Started?</h2>
+   <p>
+     Let C&amp;S Waste take the hassle out of your next cleanup.
+     Give us a call today!
+   </p>
+   <a class="button" href="tel:7405007367">
+     CALL 740-500-7367
+   </a>
+ </div>
+</section>
 
-  <!-- FOOTER & CONTACT -->
-  <footer id="contact" class="site-footer" role="contentinfo">
-    <div class="container footer-inner">
-      <div class="footer-left">
-        <div class="copyright">© <span id="year"></span> C&S Waste. All rights reserved.</div>
-        <p class="small">Serving Fairfield County, OH — Call or text 740-500-7367</p>
-      </div>
+</main>
 
-      <div class="footer-right">
-        <!-- Netlify-ready contact form -->
-        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form" aria-label="Contact form">
-          <input type="hidden" name="form-name" value="contact">
-          <p class="sr-only"><label>Don’t fill this out if you're human: <input name="bot-field"></label></p>
+<footer id="contact">
+ <div class="container">
+   <h2>C&amp;S WASTE</h2>
+   <p>Dumpster Rental • Junk Removal • Loading &amp; Hauling</p>
+   <p>Serving Fairfield County, Ohio</p>
+   <p><a href="tel:7405007367">740-500-7367</a></p>
 
-          <label>
-            <span class="sr-only">Your name</span>
-            <input name="name" type="text" placeholder="Your name" required>
-          </label>
-          <label>
-            <span class="sr-only">Phone or email</span>
-            <input name="email" type="text" placeholder="Phone or email" required>
-          </label>
-          <label>
-            <span class="sr-only">Message</span>
-            <textarea name="message" placeholder="How can we help?" rows="2" required></textarea>
-          </label>
-          <div class="contact-actions">
-            <button class="btn btn-primary" type="submit">Send</button>
-          </div>
-        </form>
+   <div class="footer-bottom">
+     © 2026 C&amp;S Waste. All Rights Reserved.
+   </div>
+ </div>
+</footer>
 
-        <div class="socials">
-          <a href="#" aria-label="Facebook">FB</a>
-          <a href="#" aria-label="Instagram">IG</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Quote Modal (Netlify-ready form) -->
-  <div class="modal" id="quoteModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="quoteTitle">
-    <div class="modal-backdrop" id="modalBackdrop"></div>
-    <div class="modal-panel" role="document">
-      <button class="modal-close" id="closeModal" aria-label="Close quote dialog">✕</button>
-      <h2 id="quoteTitle">Get a Quote</h2>
-
-      <form id="quoteForm" name="quote" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="quote-form" aria-label="Booking form">
-        <input type="hidden" name="form-name" value="quote">
-        <p class="sr-only"><label>Don’t fill this out if you're human: <input name="bot-field"></label></p>
-
-        <label>
-          <span class="label">Full name</span>
-          <input name="name" type="text" placeholder="Full name" required>
-        </label>
-
-        <label>
-          <span class="label">Phone</span>
-          <input name="phone" type="tel" placeholder="Phone" required>
-        </label>
-
-        <label>
-          <span class="label">Email</span>
-          <input name="email" type="email" placeholder="Email" required>
-        </label>
-
-        <label>
-          <span class="label">Service address</span>
-          <input name="address" type="text" placeholder="Address or job site" required>
-        </label>
-
-        <label>
-          <span class="label">Rental option</span>
-          <select name="rental_option" required>
-            <option value="">Select a plan</option>
-            <option>2 Day Rental</option>
-            <option>3 Day Rental</option>
-            <option>7 Day Rental</option>
-          </select>
-        </label>
-
-        <label>
-          <span class="label">Preferred start date</span>
-          <input name="start_date" type="date">
-        </label>
-
-        <label>
-          <span class="label">Notes</span>
-          <textarea name="message" rows="3" placeholder="Anything else we should know?"></textarea>
-        </label>
-
-        <label class="checkbox">
-          <input type="checkbox" name="agree" required> I agree to terms & conditions.
-        </label>
-
-        <div class="form-actions">
-          <button class="btn btn-primary" type="submit">Request Quote</button>
-          <button class="btn btn-ghost" type="button" id="modalCancel">Cancel</button>
-        </div>
-
-        <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
-      </form>
-    </div>
-  </div>
-
-  <script src="script.js" defer></script>
 </body>
 </html>
