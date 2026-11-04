@@ -3,500 +3,182 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#142b48">
-
-<title>C&S Waste | Dumpster Rental & Junk Removal Ohio</title>
-
-<meta name="description" content="C&S Waste provides dumpster rentals, junk removal, and full-service loading and hauling in Fairfield County, Ohio. Call for a free quote!">
-
+<meta name="description" content="C&S Waste offers convenient dump trailer rentals, junk removal, and loading and hauling in Fairfield County, Ohio. Call 740-500-7367 for a quote.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="C&S Waste | Dump Trailer Rentals & Waste Removal">
+<meta property="og:description" content="You point. We load. We haul it away. Serving Fairfield County, Ohio.">
+<meta property="og:url" content="https://cswasteohio.com/">
+<meta property="og:image" content="https://cswasteohio.com/cs-waste-social-preview.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<title>C&S Waste | Dump Trailer Rentals & Waste Removal</title>
 <style>
 :root {
- --navy: #142b48;
- --blue: #203e62;
- --red: #c62832;
- --white: #ffffff;
- --light: #f3f5f8;
- --dark: #172333;
- --gray: #536174;
+  --site-primary: #27b33f;
+  --site-on-primary: #07120a;
+  --site-secondary: #101310;
+  --site-on-secondary: #ffffff;
+  --site-background: #ffffff;
+  --site-on-background: #171a17;
+  --site-font-body: Arial, Helvetica, sans-serif;
+  --site-font-heading: Impact, "Arial Narrow", sans-serif;
+  --site-heading-scale: 1;
+  --site-spacing-scale: 1;
+  --site-radius-scale: 1;
+  --site-decoration-opacity: 1;
 }
-
-* {
- box-sizing: border-box;
- margin: 0;
- padding: 0;
-}
-
+* { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-
-body {
- font-family: Arial, Helvetica, sans-serif;
- color: var(--dark);
- line-height: 1.65;
- background: white;
-}
-
-a { text-decoration: none; }
-
-.container {
- width: min(1120px, 90%);
- margin: auto;
-}
-
-header {
- background: var(--navy);
- color: white;
- padding: 18px 0;
-}
-
-.nav {
- display: flex;
- align-items: center;
- justify-content: space-between;
- gap: 20px;
- flex-wrap: wrap;
-}
-
-.brand {
- color: white;
- font-size: 29px;
- font-weight: 900;
- letter-spacing: -1px;
-}
-
-.brand span { color: #f04a50; }
-
-.nav-links {
- display: flex;
- gap: 24px;
- align-items: center;
-}
-
-.nav-links a {
- color: white;
- font-weight: 700;
- font-size: 15px;
-}
-
-.button {
- display: inline-block;
- background: var(--red);
- color: white;
- padding: 14px 24px;
- border-radius: 6px;
- font-weight: 800;
- text-align: center;
- transition: .2s;
-}
-
-.button:hover {
- background: #a91e28;
- transform: translateY(-2px);
-}
-
-.button.outline {
- background: transparent;
- border: 2px solid white;
-}
-
-.hero {
- background: linear-gradient(120deg, #142b48, #294b70);
- color: white;
- padding: 100px 0;
- text-align: center;
-}
-
-.hero h1 {
- font-size: clamp(36px, 6vw, 58px);
- line-height: 1.12;
- font-weight: 900;
- margin-bottom: 22px;
-}
-
-.hero p {
- max-width: 720px;
- margin: 0 auto 30px;
- font-size: 20px;
- color: #ffffff;
- font-weight: 500;
-}
-
-.hero-buttons {
- display: flex;
- justify-content: center;
- gap: 14px;
- flex-wrap: wrap;
-}
-
-.section {
- padding: 75px 0;
-}
-
-.section-light { background: var(--light); }
-
-.section-heading {
- text-align: center;
- margin-bottom: 40px;
-}
-
-.section-heading h2 {
- color: var(--navy);
- font-size: clamp(29px, 4vw, 40px);
- font-weight: 900;
- line-height: 1.2;
- margin-bottom: 12px;
-}
-
-.section-heading p {
- color: var(--gray);
- font-size: 17px;
- font-weight: 500;
-}
-
-.cards {
- display: grid;
- grid-template-columns: repeat(3, 1fr);
- gap: 24px;
-}
-
-.card {
- background: white;
- padding: 30px;
- border-radius: 10px;
- box-shadow: 0 5px 22px rgba(20,43,72,.09);
- border-top: 5px solid var(--red);
-}
-
-.card h3 {
- color: var(--navy);
- font-size: 22px;
- font-weight: 900;
- margin-bottom: 12px;
-}
-
-.card p {
- color: var(--gray);
- font-weight: 500;
-}
-
-.service-icon {
- font-size: 34px;
- margin-bottom: 15px;
-}
-
-.full-service {
- background: var(--navy);
- color: white;
- text-align: center;
- padding: 75px 20px;
-}
-
-.full-service h2 {
- font-size: clamp(30px, 5vw, 45px);
- font-weight: 900;
- margin-bottom: 15px;
-}
-
-.full-service h3 {
- color: #ff666b;
- font-size: clamp(23px, 4vw, 32px);
- margin-bottom: 18px;
- font-weight: 900;
-}
-
-.full-service p {
- max-width: 720px;
- margin: 0 auto 15px;
- color: white;
- font-size: 18px;
-}
-
-.pricing-note {
- background: white;
- border-radius: 10px;
- padding: 35px;
- text-align: center;
- max-width: 800px;
- margin: auto;
- box-shadow: 0 5px 22px rgba(20,43,72,.08);
-}
-
-.pricing-note h2 {
- color: var(--navy);
- font-size: 30px;
- font-weight: 900;
- margin-bottom: 12px;
-}
-
-.pricing-note p {
- color: var(--gray);
- font-size: 17px;
- margin-bottom: 20px;
-}
-
-.why {
- display: grid;
- grid-template-columns: repeat(2, 1fr);
- gap: 20px;
- max-width: 850px;
- margin: auto;
-}
-
-.why-item {
- background: white;
- padding: 22px;
- border-radius: 8px;
- font-weight: 800;
- color: var(--navy);
- box-shadow: 0 3px 15px rgba(20,43,72,.06);
-}
-
-.why-item span {
- color: var(--red);
- margin-right: 10px;
-}
-
-.cta {
- background: var(--light);
- text-align: center;
- padding: 75px 20px;
-}
-
-.cta h2 {
- color: var(--navy);
- font-size: 38px;
- font-weight: 900;
- margin-bottom: 15px;
-}
-
-.cta p {
- color: var(--gray);
- font-size: 18px;
- margin-bottom: 25px;
-}
-
-footer {
- background: #101f33;
- color: white;
- padding: 40px 0;
- text-align: center;
-}
-
-footer h2 {
- font-size: 27px;
- margin-bottom: 10px;
-}
-
-footer p {
- color: #e2e8f0;
- margin: 7px 0;
-}
-
-footer a { color: white; font-weight: 800; }
-
-.footer-bottom {
- border-top: 1px solid #40516a;
- margin-top: 25px;
- padding-top: 20px;
- font-size: 13px;
- color: #d5dce6;
-}
-
-@media(max-width: 750px) {
- .nav {
-   justify-content: center;
-   text-align: center;
- }
-
- .nav-links {
-   justify-content: center;
-   flex-wrap: wrap;
-   gap: 15px;
- }
-
- .cards {
-   grid-template-columns: 1fr;
- }
-
- .hero { padding: 75px 0; }
-
- .hero p { font-size: 18px; }
-
- .section { padding: 55px 0; }
-
- .why { grid-template-columns: 1fr; }
-
- .cta h2 { font-size: 30px; }
+body { margin: 0; font-family: var(--site-font-body); background: var(--site-background); color: var(--site-on-background); }
+#app { min-height: 100vh; width: 100%; background-color: var(--site-background); color: var(--site-on-background); border-radius: 0; }
+a { color: inherit; }
+.topbar { background: var(--site-primary); color: var(--site-on-primary); padding: calc(11px * var(--site-spacing-scale)) 5%; font-weight: 800; text-align: center; letter-spacing: .04em; }
+header { background: var(--site-secondary); color: var(--site-on-secondary); padding: 18px 5%; display: flex; align-items: center; justify-content: space-between; gap: 20px; position: sticky; top: 0; z-index: 10; }
+.brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.brandmark { width: 82px; height: 82px; object-fit: contain; display: block; flex: 0 0 auto; }
+.brandname { color: #ffffff; font-family: var(--site-font-heading); font-size: 27px; letter-spacing: .04em; line-height: 1; }
+.brandname span { color: var(--site-primary); }
+nav { display: flex; align-items: center; gap: 24px; font-size: 14px; font-weight: 700; }
+nav a { text-decoration: none; }
+nav a:hover { color: var(--site-primary); }
+.btn { display: inline-flex; align-items: center; justify-content: center; background: var(--site-primary); color: var(--site-on-primary); border: 2px solid var(--site-primary); padding: 14px 21px; font-weight: 900; text-decoration: none; border-radius: calc(5px * var(--site-radius-scale)); transition: .2s; }
+.btn:hover { background: transparent; color: var(--site-primary); }
+.btn.dark { background: var(--site-secondary); color: var(--site-on-secondary); border-color: var(--site-secondary); }
+.hero { min-height: 560px; background: linear-gradient(90deg, rgba(10,14,12,.92), rgba(10,14,12,.72) 52%, rgba(10,14,12,.25)), linear-gradient(135deg,#343d32,#111713); color: white; display: flex; align-items: center; padding: 75px 8%; position: relative; overflow: hidden; }
+.hero:after { content: "C&S"; position: absolute; right: -20px; bottom: -100px; font-family: var(--site-font-heading); font-size: clamp(180px,32vw,430px); color: rgba(255,255,255,.045); line-height: 1; pointer-events: none; }
+.hero-content { max-width: 690px; position: relative; z-index: 1; }
+.eyebrow { color: var(--site-primary); text-transform: uppercase; font-weight: 900; letter-spacing: .18em; font-size: 13px; }
+h1,h2,h3 { font-family: var(--site-font-heading); text-transform: uppercase; line-height: .98; margin: 14px 0; }
+h1 { font-size: clamp(48px,7vw,82px); letter-spacing: .015em; }
+h1 span { color: var(--site-primary); }
+.hero p { color: #e1e7df; font-size: 18px; line-height: 1.65; max-width: 560px; margin: 22px 0 28px; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.hero .btn.outline { background: transparent; color: white; border-color: white; }
+.trustbar { background: var(--site-primary); color: var(--site-on-primary); display: grid; grid-template-columns: repeat(3,1fr); text-align: center; padding: 22px 5%; gap: 15px; font-weight: 900; text-transform: uppercase; letter-spacing: .04em; }
+section { padding: 78px 7%; }
+.section-head { max-width: 720px; margin: 0 auto 42px; text-align: center; }
+.section-head h2 { font-size: clamp(36px,5vw,54px); }
+.section-head p { line-height: 1.7; color: #414941; font-weight: 500; }
+.cards { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; max-width: 1120px; margin: auto; }
+.card { background: #ffffff; color: #171a17; padding: 30px; border-top: 5px solid var(--site-primary); border-radius: calc(7px * var(--site-radius-scale)); box-shadow: 0 10px 28px rgba(0,0,0,.07); }
+.card .number { font-family: var(--site-font-heading); color: var(--site-primary); font-size: 40px; }
+.card h3 { font-size: 27px; }
+.card p { color: #424a42; line-height: 1.65; }
+.pricing { background: #f1f4f0; }
+.full-service { background: #111511; color: #ffffff; }
+.full-service .section-head h2 { color: #ffffff; }
+.full-service .section-head p { color: #f0f4ef; font-size: 17px; }
+.full-service .section-head p strong { color: var(--site-primary); font-size: 22px; }
+.price { font-family: var(--site-font-heading); font-size: 48px; margin: 16px 0 6px; }
+.price small { font: 700 14px var(--site-font-body); }
+.price-card { position: relative; }
+.price-card.featured { outline: 3px solid var(--site-primary); transform: translateY(-8px); }
+.note { max-width: 850px; text-align: center; margin: 25px auto 0; font-size: 14px; color: #414941; line-height: 1.6; font-weight: 500; }
+.how-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 26px; max-width: 1050px; margin: auto; }
+.step { text-align: center; padding: 12px; }
+.step b { display: grid; place-items: center; margin: 0 auto 18px; width: 58px; height: 58px; border-radius: 50%; background: var(--site-primary); color: var(--site-on-primary); font-size: 23px; }
+.step h3 { font-size: 24px; }
+.step p { color: #414941; line-height: 1.6; }
+.cta { background: var(--site-secondary); color: var(--site-on-secondary); text-align: center; padding: 70px 6%; }
+.cta h2 { font-size: clamp(38px,5vw,58px); }
+.cta p { color: #d5ddd2; line-height: 1.7; }
+footer { background: #0d110e; color: #d9dfd5; padding: 35px 7%; display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; font-size: 14px; }
+footer strong { color: var(--site-primary); }
+@media (max-width: 760px) {
+ header { position: static; flex-wrap: wrap; }
+ .brandmark { width: 66px; height: 66px; }
+ nav { width: 100%; overflow-x: auto; gap: 18px; padding-bottom: 5px; }
+ nav .btn { white-space: nowrap; }
+ .hero { min-height: 520px; padding: 65px 7%; }
+ .trustbar { grid-template-columns: 1fr; }
+ .cards,.how-grid { grid-template-columns: 1fr; }
+ .price-card.featured { transform: none; }
+ section { padding: 60px 6%; }
 }
 </style>
 </head>
-
 <body>
-
-<header>
- <div class="container nav">
-   <a class="brand" href="#">C&amp;S <span>WASTE</span></a>
-
-   <nav class="nav-links">
-     <a href="#services">Services</a>
-     <a href="#full-service">Full Service</a>
-     <a href="#pricing">Pricing</a>
-     <a href="#contact">Contact</a>
-   </nav>
-
-   <a class="button" href="tel:7405007367">CALL NOW</a>
- </div>
-</header>
-
-<main>
-
-<section class="hero">
- <div class="container">
-   <h1>Reliable Dumpster Rental &amp; Junk Removal</h1>
-
-   <p>
-     Need to clear out a property, tackle a project,
-     or get rid of unwanted junk? C&amp;S Waste is here
-     to make cleanup easier.
-   </p>
-
-   <div class="hero-buttons">
-     <a class="button" href="tel:7405007367">
-       GET A FREE QUOTE
-     </a>
-     <a class="button outline" href="#services">
-       VIEW OUR SERVICES
-     </a>
-   </div>
- </div>
-</section>
-
-<section class="section section-light" id="services">
- <div class="container">
-   <div class="section-heading">
-     <h2>How Can We Help?</h2>
-     <p>Practical cleanup solutions for your home or project.</p>
-   </div>
-
-   <div class="cards">
-
-     <div class="card">
-       <div class="service-icon">🚛</div>
-       <h3>Dumpster Rentals</h3>
-       <p>
-         Convenient dumpster rentals for home cleanouts,
-         renovations, property cleanup, and more.
-       </p>
-     </div>
-
-     <div class="card">
-       <div class="service-icon">♻️</div>
-       <h3>Junk Removal</h3>
-       <p>
-         Get unwanted items and debris out of your way.
-         Let C&amp;S Waste help with your cleanup.
-       </p>
-     </div>
-
-     <div class="card">
-       <div class="service-icon">💪</div>
-       <h3>Loading &amp; Hauling</h3>
-       <p>
-         Don't want to do the heavy lifting?
-         We can load your unwanted items and haul them away.
-       </p>
-     </div>
-
-   </div>
- </div>
-</section>
-
-<section class="full-service" id="full-service">
- <div class="container">
-   <h2>DON'T WANT TO LIFT A FINGER?</h2>
-
-   <h3>You Point. We Load. We Haul It Away!</h3>
-
-   <p>
-     Sit back and relax. We'll handle the heavy lifting,
-     loading, and hauling so you don't have to.
-   </p>
-
-   <p>
-     Pricing varies based on the amount of material,
-     loading requirements, and disposal fees.
-     Contact us for a free estimate.
-   </p>
-
-   <a class="button" href="tel:7405007367">
-     GET YOUR FREE QUOTE
-   </a>
- </div>
-</section>
-
-<section class="section section-light" id="pricing">
- <div class="container">
-   <div class="pricing-note">
-     <h2>Simple, Upfront Pricing</h2>
-     <p>
-       Every cleanup project is different.
-       Rates vary depending on the dumpster size,
-       amount of material, loading requirements,
-       and disposal costs.
-     </p>
-     <p>
-       Contact us for a personalized quote
-       with no obligation.
-     </p>
-     <a class="button" href="tel:7405007367">
-       ASK ABOUT PRICING
-     </a>
-   </div>
- </div>
-</section>
-
-<section class="section">
- <div class="container">
-   <div class="section-heading">
-     <h2>Why Choose C&amp;S Waste?</h2>
-     <p>Making your next cleanup project easier.</p>
-   </div>
-
-   <div class="why">
-     <div class="why-item"><span>✓</span> Convenient Cleanup Solutions</div>
-     <div class="why-item"><span>✓</span> Friendly, Reliable Service</div>
-     <div class="why-item"><span>✓</span> Dumpster Rental Options</div>
-     <div class="why-item"><span>✓</span> Full-Service Loading Available</div>
-   </div>
- </div>
-</section>
-
-<section class="cta">
- <div class="container">
-   <h2>Ready to Get Started?</h2>
-   <p>
-     Let C&amp;S Waste take the hassle out of your next cleanup.
-     Give us a call today!
-   </p>
-   <a class="button" href="tel:7405007367">
-     CALL 740-500-7367
-   </a>
- </div>
-</section>
-
-</main>
-
-<footer id="contact">
- <div class="container">
-   <h2>C&amp;S WASTE</h2>
-   <p>Dumpster Rental • Junk Removal • Loading &amp; Hauling</p>
-   <p>Serving Fairfield County, Ohio</p>
-   <p><a href="tel:7405007367">740-500-7367</a></p>
-
-   <div class="footer-bottom">
-     © 2026 C&amp;S Waste. All Rights Reserved.
-   </div>
- </div>
-</footer>
-
+<div id="app">
+  <div class="topbar">DUMP TRAILER RENTALS & WASTE REMOVAL · FAIRFIELD COUNTY, OHIO</div>
+  <header>
+    <a class="brand" href="#home" aria-label="C and S Waste home">
+      <img class="brandmark" src="cs-waste-logo.png" alt="C&amp;S Waste logo">
+      <div class="brandname">C&amp;S <span>WASTE</span></div>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#services">Services</a>
+      <a href="#full-service">Full Service</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#how">How It Works</a>
+      <a href="#contact">Contact</a>
+      <a class="btn" href="sms:17405007367?body=Hi%20C%26S%20Waste%2C%20I%27d%20like%20a%20quote.">Get a Quote</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="eyebrow">Local. Convenient. Dependable.</div>
+        <h1>Make Cleanup<br><span>Easy.</span></h1>
+        <p>Taking on a home cleanout, renovation, or job-site project? C&amp;S Waste makes waste removal simple with convenient dump trailer rentals serving Fairfield County, Ohio.</p>
+        <div class="hero-actions">
+          <a class="btn" href="sms:17405007367?body=Hi%20C%26S%20Waste%2C%20I%27d%20like%20a%20quote.">Get a Free Quote</a>
+          <a class="btn outline" href="tel:17405007367">Call 740-500-7367</a>
+        </div>
+      </div>
+    </section>
+    <div class="trustbar"><div>✓ Easy Scheduling</div><div>✓ Residential &amp; Commercial</div><div>✓ Serving Fairfield County</div></div>
+    <section id="services">
+      <div class="section-head">
+        <div class="eyebrow">What We Do</div>
+        <h2>One Less Thing To Worry About</h2>
+        <p>Get the space and flexibility you need to tackle your next project. We help homeowners, contractors, and local businesses handle unwanted material and debris.</p>
+      </div>
+      <div class="cards">
+        <article class="card"><div class="number">01</div><h3>Home Projects</h3><p>Cleanouts, garage and basement cleanups, yard projects, and renovation debris.</p></article>
+        <article class="card"><div class="number">02</div><h3>Construction &amp; Contractors</h3><p>A practical waste-removal option for remodels, job sites, and ongoing projects.</p></article>
+        <article class="card"><div class="number">03</div><h3>Business &amp; Property</h3><p>Help clearing unwanted items and debris from commercial spaces and properties.</p></article>
+      </div>
+    </section>
+    <section class="full-service" id="full-service">
+      <div class="section-head">
+        <div class="eyebrow">Full-Service Removal</div>
+        <h2>Don't Want To Lift A Finger?</h2>
+        <p><strong>You Point. We Load. We Haul It Away!</strong><br>
+        Sit back and relax. We can handle the heavy lifting, loading, and hauling so you don't have to.
+        Pricing varies based on the amount of material, loading requirements, and disposal fees. Contact us for a free estimate.</p>
+        <a class="btn" href="sms:17405007367?body=Hi%20C%26S%20Waste%2C%20I%27d%20like%20a%20full-service%20loading%20and%20hauling%20quote.">Get a Full-Service Quote</a>
+      </div>
+    </section>
+    <section class="pricing" id="pricing">
+      <div class="section-head">
+        <div class="eyebrow">Straightforward Starting Rates</div>
+        <h2>Dump Trailer Rental</h2>
+        <p>Choose the rental option that fits your project. Contact us to confirm availability, rental duration, and what can be loaded.</p>
+      </div>
+      <div class="cards">
+        <article class="card price-card"><h3>Rental Option 1</h3><div class="price">$299</div><p>Starting rental rate. Ask us about availability and project details.</p><a class="btn dark" href="sms:17405007367?body=I%27m%20interested%20in%20the%20%24299%20rental%20option.">Ask About This</a></article>
+        <article class="card price-card featured"><h3>Rental Option 2</h3><div class="price">$349</div><p>Starting rental rate. Tell us what you need to haul and when.</p><a class="btn dark" href="sms:17405007367?body=I%27m%20interested%20in%20the%20%24349%20rental%20option.">Ask About This</a></article>
+        <article class="card price-card"><h3>Rental Option 3</h3><div class="price">$449</div><p>Starting rental rate. Get in touch for details and scheduling.</p><a class="btn dark" href="sms:17405007367?body=I%27m%20interested%20in%20the%20%24449%20rental%20option.">Ask About This</a></article>
+      </div>
+      <p class="note">Rates shown are the three prices previously provided for your business. Rental terms, included time, delivery, disposal, weight limits, and additional fees should be confirmed with C&amp;S Waste before booking.</p>
+    </section>
+    <section id="how">
+      <div class="section-head"><div class="eyebrow">Simple From Start To Finish</div><h2>How It Works</h2><p>Tell us about your project and we’ll help you figure out the next step.</p></div>
+      <div class="how-grid">
+        <div class="step"><b>1</b><h3>Request a Quote</h3><p>Call or text with your location, project, and preferred dates.</p></div>
+        <div class="step"><b>2</b><h3>Schedule</h3><p>We’ll discuss availability, pricing, and the details for your rental.</p></div>
+        <div class="step"><b>3</b><h3>Get It Done</h3><p>Load up and make progress on your cleanup or project.</p></div>
+      </div>
+    </section>
+    <section class="cta" id="contact">
+      <div class="eyebrow">Ready To Get Started?</div>
+      <h2>Let's Clear Some Space.</h2>
+      <p>Serving Fairfield County, Ohio. Call or text C&amp;S Waste to request a quote.</p>
+      <p style="font-size:clamp(26px,4vw,38px);font-weight:900;margin:24px 0;"><a href="tel:17405007367" style="text-decoration:none;">740-500-7367</a></p>
+      <div class="hero-actions" style="justify-content:center;"><a class="btn" href="sms:17405007367?body=Hi%20C%26S%20Waste%2C%20I%27d%20like%20a%20quote.">Text for a Quote</a><a class="btn outline" href="tel:17405007367">Call Now</a></div>
+    </section>
+  </main>
+  <footer><div><strong>C&amp;S WASTE</strong><br>Dump trailer rentals &amp; waste removal</div><div>Serving Fairfield County, Ohio<br><a href="tel:17405007367">740-500-7367</a></div><div>© <span id="year">2026</span> C&amp;S Waste</div></footer>
+</div>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
